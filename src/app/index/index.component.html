@@ -1,0 +1,12 @@
+
+
+<ul class="demo">
+    <li><a (click)="toggle('detail')">Detail</a></li>
+    <li><a (click)="toggle('report')">Report</a></li>
+    <li><a (click)="toggle('customer')">Customer</a></li>
+</ul>
+<div>
+  <app-detail *ngIf="showDetail"></app-detail>
+  <app-report *ngIf="showReport"></app-report>
+  <app-customer *ngIf="showCustomer"></app-customer>
+</div>
